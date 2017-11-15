@@ -1,0 +1,10 @@
+Ho creato le seguenti relazioni:
+
+Cliente: id, nome, cognome, username, password, credito
+Venditore: id, nome, cognome, username, password, credito
+Oggetti: id, nome, pezzi, descrizione, url, idVenditore
+
+Nella tabella Oggetti, l'idVenditore referenzia l'id della tabella Venditore.
+
+User: fabrizio
+Password: 1234

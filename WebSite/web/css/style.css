@@ -1,0 +1,783 @@
+/* 
+    Document   : CSS
+    Created on : Marzo 2016
+    Author     : Fabrizio Cara
+*/
+
+body 
+/*Modificare il font e i colori delle pagina generica*/
+{
+    font-size: 16px;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    color: black;
+    background-color: lightgray;
+    
+}
+
+
+.page
+/*Classe creata per impostare un colore di backgorund alla pagine*/
+{
+    background-color: beige;
+}
+
+h1
+/*Modificare la grafica del titolo ->WebSiteName<- in tutte le pagine*/
+{
+    color: white;
+    background-color: rgb(58,58,58);
+    font-family: Times New Roman, Georgia, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    height: 100px;
+    border-bottom: solid;
+    border-bottom-color: rgb(255, 161, 26);
+    border-bottom-width: 4px;
+    margin: 0px;    
+}
+
+nav
+/*Modificare la grafica dei link nella barra di navigazione e il colore di sfondo*/
+{
+    background-color: rgb(58,58,58);
+    font-family: Times New Roman, Georgia, sans-serif;
+    
+}
+
+#Primo, #Secondo, #Terzo, h2, h3
+/*Colore e grafica degli header della pagina descrizione e login*/
+{
+    color: rgb(255, 161, 26);
+    font-family: Times New Roman, Georgia, sans-serif;
+    font-size: 30px;    
+}
+
+nav a:link 
+/*Colore dei link della navigazione prima di aver cliccato sul link*/
+{
+    color: white;
+}
+
+nav a:hover 
+/*Colore di sfondo dei link della navigazione quando si passa col mouse sopra*/
+{
+    background-color: blue;
+}
+
+nav a:visited 
+/*Colore dei link della navigazione dopo aver cliccato sul link*/
+{  
+    color: gold;
+}
+
+a:link 
+/*Colore dei link del sommario prima di aver cliccato sul link*/
+{
+    color: black; 
+}
+
+a:visited 
+/*Colore dei link del sommario dopo aver cliccato sul link*/
+{  
+    color: blue;
+}
+
+a:hover 
+/*Colore di sfondo dei link del sommario quando si passa col mouse sopra*/
+{
+    background-color: gold;
+}
+
+td, th 
+/*Creazione bordi delle celle della tabella. Modifica: carattere e allineamento*/
+{
+    border: solid;
+    border-color: black;
+    border-collapse: collapse;
+    border-width: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+th 
+/* Modifica intestazioni: caratteri */
+{
+    font-family: Times New Roman, Georgia, sans-serif;
+}
+
+table 
+/*Far combaciare i bordi della tabella*/
+{
+    border-collapse: collapse;
+}
+
+tr:nth-child(even)
+{
+    background-color:  darkseagreen;
+}
+
+.pari
+{
+    background-color: gray;   
+}
+
+.intest 
+/*Classe creata per dare un colore di sfondo all'intestazione'*/
+{
+    background-color: rgb(255, 161, 26);
+}
+
+form label 
+/*Mandare a capo le intestazioni dei campi del form, impostare colori e font*/
+{
+    display: block;
+    color: rgb(58, 58, 58);
+    font-weight: bold;
+}
+
+#User, #Passw, #nome, #immagine, #descrizione, #quantita, #prezzo
+/*Creare i bordi e modificare la grafica dei campi del form*/
+{
+    padding: 7px;
+    bottom: 25px;
+    border: solid;
+    border-width: 2px;
+    border-color: rgb(58, 58, 58);
+}
+
+form 
+/*Modificare i bordi e i colori del font*/
+{
+    border: solid;
+    border-width: 2px;
+    border-color: rgb(58, 58, 58);
+    border-radius: 20px; /* smussa gli angoli */
+    background-color: rgb(255, 161, 26);
+}
+
+.submit, .submit1, .submit2, .submit3
+/*Impostare i bordi dei bottoni*/
+{
+    border: solid;
+    border-width: 2px;
+    border-color: rgb(58, 58, 58);
+}
+
+select
+{
+    border: solid;
+    border-width: 2px;
+    border-color: rgb(58, 58, 58);
+}
+
+.submit
+/*Fare in modo che i bordi del bottone della pagina login combacino*/
+{
+    width: 56px;
+}
+
+.submit1
+/*Fare in modo che i bordi del bottone della pagina venditore combacino*/
+{
+    width: 113px;
+}
+
+.submit2
+/*Fare in modo che i bordi del bottone della pagina venditore combacino*/
+{
+    width: 65px;
+}
+
+.submit3
+/*Fare in modo che i bordi del bottone della pagina venditore combacino*/
+{
+    width: 67px;
+}
+
+:focus 
+/*Per colorare lo sfondo dei campi del form quando si preme sopra*/
+{
+    background-color: rgb(255, 161, 26);
+}
+
+.linkp, .search
+/*Posizionare i p di conferma al centro*/
+{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.Descrizione
+{
+    word-wrap: break-word;
+}
+
+.search
+{
+    position: relative;
+    margin-top: 0px;
+}
+
+@media only screen and (min-width: 1024px)
+
+{    .page
+    /*Impostare la pagina con un layout fisso*/
+    {
+        width: 1024px;
+        min-height: 1500px;
+        margin-left: auto;
+        border-radius: 8px;
+        margin-right: auto;
+        margin-top: 20px;
+        border: solid;
+        border-width: 5px;
+        border-color: rgb(75, 75, 75);
+    }
+    
+    .p
+    {
+        position: relative;
+        left: 290px;
+        top: 20px;
+    }
+    
+    .Descrizione 
+    {
+        max-width: 400px;
+    }   
+    
+
+    .titoloform
+    /*Posizionare il titolo delle pagine login e venditore*/
+    {
+        position: relative;
+        left: 290px;
+        top: 40px;
+        margin-bottom: 50px;
+    }
+    
+    .linkp
+    /*Posizionare i p di conferma al centro*/
+    {
+        position: relative;
+        left: 90px;
+        top: 40px;
+        margin-bottom: 30px;
+    }
+    
+    .search
+    {
+        position: relative;
+        left: 90px;
+        top: 40px;
+        margin-bottom: 55px;
+    }
+    
+    form
+    /*Posizionare il form*/
+    {
+        position: relative;
+        left: 290px;
+        top: 50px;
+        width: 440px;
+        padding: 40px;
+        margin-bottom: 80px;
+    }
+
+    #nome, #immagine, #quantita, #prezzo, #descrizione, #User, #Passw
+    /*Per modificare la posizione da sinistra in venditore*/
+    {
+        position: relative;
+        left: 180px;
+        width: 230px;
+    }
+    
+    form label 
+    /*Per posizionare le intestazioni dei campi dei form*/
+    {
+        padding-left: 20px;
+    }
+    
+    .submit, .submit1
+    /*Posizionare il bottone nei due form*/
+    {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        top: 10px;
+    }
+    
+    .submit2
+    /*Posizionare il bottone nei due form*/
+    {
+        position: relative;
+        left: 270px;
+        top: 30px;
+    }
+    
+    .submit3
+    /*Posizionare il bottone nei due form*/
+    {
+        position: relative;
+        left: 110px;
+        top: 6px;
+    }
+    
+    select
+    {
+        position: relative;
+        left: 45px;
+        max-width: 350px;
+    }
+
+    nav, .navheight
+    /*Posizionare la barra della navigazione sulla colonna sinistra. 
+      Aggiungere i bordi e modificarli*/
+    {
+        position:absolute;
+        top: 129px;
+        width: 200px;
+        border-right: solid;
+        border-width: 4px;
+        border-right-color: rgb(255, 161, 26);
+    }
+    
+    nav
+    /*Far combaciare la lunghezza della barra di navigazione con la lunghezza
+      della pagina in tutte le pagine tranne che in cliente*/
+    {
+        min-height: 1399px;
+    }
+    
+    .navheight 
+    /*Far combaciare la lunghezza della barra di navigazione con lunghezza della
+      pagina nella pagina cliente*/
+    {
+         min-height: 835px;
+    }
+        
+    nav ul
+    /*Posizionare la lista dei link nella barra di navigazione*/
+    {
+        position: relative;
+        top: 40px;
+        color: rgb(255, 161, 26);
+    }
+    
+    nav li
+    /*Distanziare le righe della lista nella barra di navigazione*/
+    {
+        padding-bottom: 10px;
+    }
+     
+    #Primo, #Secondo, #Terzo, h2, h3
+    /*Posizionare gli header delle pagine tranne che di login e venditore*/
+    {
+        position: relative;
+        left: 270px;
+        margin-bottom: 0px;
+        max-width: 355px;
+    }
+    
+    .list
+    /*Posizionare la lista nel sommario della pagina descrizione*/
+    {
+        position: relative;
+        left: 250px;
+        margin-bottom: 40px;
+        max-width: 600px;
+    }
+    
+    p
+    /*Posizionare i paragrafi della pagina descrizione*/
+    {
+        position: relative;
+        left: 270px;
+        max-width: 690px;
+    }
+    
+    table
+    /*Posizionare la tabella della pagina cliente*/
+    {
+        position: relative;
+        left: 255px;
+        top: 20px;
+        width: 70%;
+        margin-bottom: 40px;
+        min-width: 640px;
+    }
+    
+    th 
+    /*Modifica la misura del font dell'intestazione*/
+    {
+        font-size: 20px;
+    }   
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1024px)
+{
+    .page
+    /*Impostare la struttura della pagina fluida*/
+    {
+        width: 100%;
+        border: solid;
+        border-width: 5px;
+        border-color: rgb(75, 75, 75);
+    }
+    
+    .titoloform
+    /*Posizionare i p di conferma al centro*/
+    {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+    .p
+    {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+    form
+    /*Posizionare il form al centro della pagina */
+    {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        bottom: 20px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        width: 50%;
+        min-width: 360px;
+        padding: 40px;
+    }
+    
+    #nome, #immagine, #quantita, #prezzo, #descrizione, #User, #Passw
+    /*Per modificare la posizione dei campi dei due form e la loro struttura*/
+    {
+        position: relative;
+        left: 40%;
+        width: 60%;
+        max-width: 220px;
+        min-width: 160px
+    }
+    
+    select
+    {
+        position: relative;
+        left: 10%;
+        right: 30%;        
+        width: 80%;
+    }
+    
+    .submit, .submit1
+    /* Per impostare la larghezza del bottone nella pagina cliente */
+    {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .submit2
+    {
+        position: relative;
+        left: 60%;
+        top: 30px;
+    }
+    
+    .submit3
+    {
+        position: relative;
+        left: 21%;
+        top: 6px;
+    }
+
+    nav
+    /*Modificare la struttura della barra dei link di navigazione*/
+    {
+        width: 100%;
+        height: 90px;
+        border-top: solid;
+        border-width: 4px;
+        border-top-color: rgb(255, 161, 26);
+    }
+    
+    nav ul
+    /*Posizionare la lista dei link nella barra di navigazione in basso*/
+    {
+        position: relative;
+        bottom: 5px;
+        color: rgb(255, 161, 26);
+    }
+    
+    nav li
+    /*Distanziare le righe della lista nella barra di navigazione in basso*/
+    {
+        padding-bottom: 5px;
+    }
+     
+    #Primo, #Secondo, #Terzo, h2, h3
+    /*Posizionare gli header della pagina descrizione*/
+    {
+        margin-left: 5%;
+        max-width: 355px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    
+    .linkp
+    /*Posizionare i p di conferma al centro*/
+    {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .search
+    {
+        margin-top: 35px;
+    }
+    
+    
+    p
+    /*Posizionare i paragrafi nella pagina descrizione*/
+    {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+         
+    .list
+    /*Posizionare la lista del sommario della pagina descrizione*/
+    {
+        position: relative;
+        left: 1.5%;
+        max-width: 50%;
+    }
+    
+    table
+    /*Posizionare la tabella della pagina cliente*/
+    {
+        position: relative;
+        top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        margin-bottom: 70px;
+    }
+    
+    td, th 
+    /*Modifica la misura del font delle celle */
+    {
+        font-size: 90%;
+    }
+    
+    th 
+    /* Modifica la misura del font dell'intestazione' */
+    {
+        font-size: 120%;
+    }
+    
+    .Descrizione 
+    {
+        max-width: 100px;
+    }  
+}
+
+
+@media only screen and (max-width: 480px)
+{
+    .page
+    /*Impostare la struttura della pagina fluida*/
+    {
+        width: 100%;
+        border: solid;
+        border-width: 5px;
+        border-color: rgb(75, 75, 75);
+    }
+    
+    form
+    /*Posizionare il form centrato */
+    {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        bottom: 20px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        width: 90%
+    }
+    
+    .Descrizione 
+    {
+        max-width: 50px;
+    } 
+    
+    form label
+    /*Posizionare le intestazioni dei campi del form centrali*/
+    {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 25px;
+        max-width: 130px;
+        text-align: center;
+    }
+    
+    .p
+    {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    #nome, #immagine, #quantita, #prezzo, #descrizione, #User, #Passw
+    /*Modificare la posizione dei campi dei due form*/
+    {
+        position: relative;
+        bottom: 15px;
+        left: 18%;
+        width: 60%;
+        max-width: 245px;
+    }
+    
+    select
+    {
+        position: relative;
+        left: 15%;
+        right: 18px;
+        min-width: 80px;
+        max-width: 245px;
+    }
+    
+    .submit, .submit1
+    /*Per impostare la posizione dei bottoni dei due form*/
+    {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        top: 10px;
+    }
+    
+    .submit2
+    {
+        position: relative;
+        left: 60%;
+        top: 30px;
+    }
+    
+    .submit3
+    {
+        position: relative;
+        left: 24%;
+        top: 6px;
+    }
+
+    nav, .navheight
+    /*Posizionare la barra dei link di navigazione in basso*/
+    {
+        width: 100%;
+        height: 90px;
+        border-top: solid;
+        border-width: 4px;
+        border-top-color: rgb(255, 161, 26);
+        margin-top: 40px;
+    }
+    
+    nav ul
+    /*Modificare la posizione della lista dei link della barra di navigazione in basso*/
+    {
+        position: relative;
+        bottom: 4px;
+        color: rgb(255, 161, 26);
+    }
+    
+    nav li
+    /*Distanziare le righe della lista nella barra di navigazione in basso*/
+    {
+        padding-bottom: 5px;
+    }
+     
+    #Primo, #Secondo, #Terzo, h2, h3
+    /*Posizionare gli header della pagina descrizione*/
+    {
+        font-size: 128%;
+        text-align: left;
+        margin-left: 5%;
+        max-width: 240px;
+        margin-bottom: 0px;
+        margin-top: 20px;
+    }
+    
+    .titoloform
+    /*Posizionare gli header delle pagine login e venditore*/
+    {   
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+    .search
+    {
+        margin-top: 30px;
+    }
+    
+    p
+    /*Posizionare i paragrafi nella pagina descrizione*/
+    {
+        position: relative;
+        width: 90%;
+        font-size: 14px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .list
+    /*Posizionare la lista del sommario della pagina descrizione*/
+    {
+        margin-bottom: 30px;
+        max-width: 50%;
+        font-size: 15px;
+    }
+    
+    table
+    /*Posizionare la tabella della pagina cliente*/
+    {
+        position: relative;
+        top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 98%;
+        margin-bottom: 80px;
+    }
+    
+    table img
+    /*Modificare la grandezza delle immagini della tabella*/
+    {
+        width: 90%;
+        min-width: 30px;
+        min-height: 100px;
+        height: 50%;
+    }
+    
+    td, th 
+    /*Modifica la misura del font delle celle*/
+    {
+        font-size: 75%;
+    }
+    
+    th 
+    /*Modifica la misura del font dell'intestazione' */
+    {
+        font-size: 90%;
+    }
+}
