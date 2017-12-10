@@ -14,3 +14,5 @@ This project is composed of:
   -	to store all the information about buyers, sellers and items a derby SQL db is used
 5.	JAVASCRIP page:
   -	in the client webpage there is the possibility to search an item dynamically in the db every time a key of the keyboard is pressed. In order to add this functionality, I wrote a JAVASCRIPT function with an AJAX request to the db using JSON to communicate
+
+To run this website use netbeans!
